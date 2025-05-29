@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/Entitlements.xcent /Users/walt/Downloads/TaskManagementApp/TaskManagementApp/bin/Debug/net8.0-maccatalyst/maccatalyst-x64/TaskManagementApp.app

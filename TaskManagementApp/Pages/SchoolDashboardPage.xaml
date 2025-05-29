@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    x:Class="TaskManagementApp.Pages.SchoolDashboardPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:TaskManagementApp.Models">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="School Tasks" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <CollectionView x:Name="TaskListView" SelectionMode="Single" SelectionChanged="OnTaskSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:TaskModel">
+                    <Frame Margin="5" Padding="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding Type}" FontSize="14" TextColor="Gray" />
+                            <Label Text="{Binding Description}" FontSize="14" LineBreakMode="TailTruncation" MaxLines="2" />
+                            <HorizontalStackLayout Spacing="15" VerticalOptions="Center">
+                                <Label Text="Due:" FontAttributes="Italic" FontSize="12" />
+                                <Label Text="{Binding EndDate, StringFormat='{0:MMM dd, yyyy}'}" FontSize="12" />
+                                <Label Text="Status:" FontAttributes="Italic" FontSize="12" />
+                                <Label Text="{Binding Status}" FontSize="12" TextColor="Blue" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Create New Task" Clicked="OnCreateTaskClicked" BackgroundColor="#4CAF50" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

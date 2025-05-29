@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TaskManagementApp.Pages.DashboardSelectorPage"
+    Title="Choose Dashboard">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <Label 
+            Text="Select a Dashboard"
+            FontSize="24"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="School Dashboard"
+            Clicked="OnSchoolDashboardClicked"
+            BackgroundColor="#4CAF50"
+            TextColor="White"
+            CornerRadius="10"/>
+
+        <Button 
+            Text="Shop Dashboard"
+            Clicked="OnShopDashboardClicked"
+            BackgroundColor="#2196F3"
+            TextColor="White"
+            CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>
