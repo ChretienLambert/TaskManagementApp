@@ -1,6 +1,7 @@
 ﻿using TaskManagementApp.Services;
 using TaskManagementApp.Pages;
 using TaskManagementApp;
+using CommunityToolkit.Maui;
 
 public static class MauiProgram
 {
@@ -10,6 +11,7 @@ public static class MauiProgram
 
         builder
             .UseMauiApp<App>() // This tells Maui to use the App class as the root
+            .UseMauiCommunityToolkit() // <-- Add this line
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

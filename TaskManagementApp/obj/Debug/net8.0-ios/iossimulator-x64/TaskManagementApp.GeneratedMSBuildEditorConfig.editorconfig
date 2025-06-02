@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net8.0-ios
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -11,3 +15,51 @@ build_property.RootNamespace = TaskManagementApp
 build_property.ProjectDir = /Users/walt/Downloads/TaskManagementApp/TaskManagementApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/CreateTaskPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.CreateTaskPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/CreateTaskPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/CreateTaskPage.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/DashboardSelectorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.DashboardSelectorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/DashboardSelectorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/DashboardSelectorPage.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/LoginPage.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/SchoolDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.SchoolDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/SchoolDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/SchoolDashboardPage.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/ShopDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.ShopDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ShopDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ShopDashboardPage.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

@@ -1,0 +1,5 @@
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net9.0-windows10.0.19041.0/win10-x64/TaskManagementApp.csproj.AssemblyReference.cache
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net9.0-windows10.0.19041.0/win10-x64/mauiimage.inputs
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net9.0-windows10.0.19041.0/win10-x64/mauifont.inputs
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net9.0-windows10.0.19041.0/win10-x64/mauisplash.inputs
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net9.0-windows10.0.19041.0/win10-x64/mauimanifest.stamp

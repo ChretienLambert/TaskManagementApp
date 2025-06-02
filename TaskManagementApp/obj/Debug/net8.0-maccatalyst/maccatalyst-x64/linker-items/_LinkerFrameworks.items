@@ -4,19 +4,34 @@
     <_LinkerFrameworks Include="Accelerate">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Accessibility">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="Accounts">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AddressBook">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AdSupport">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AppClip">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="AppKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AppTrackingTransparency">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AudioToolbox">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AuthenticationServices">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AutomaticAssessmentConfiguration">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AVFoundation">
@@ -35,6 +50,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CFNetwork">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="ClassKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CloudKit">
@@ -91,6 +109,9 @@
     <_LinkerFrameworks Include="CoreSpotlight">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreTelephony">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreText">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -133,6 +154,9 @@
     <_LinkerFrameworks Include="HealthKitUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="HomeKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="IdentityLookup">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -172,6 +196,9 @@
     <_LinkerFrameworks Include="MediaToolbox">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Messages">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="MessageUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -184,7 +211,13 @@
     <_LinkerFrameworks Include="MetalPerformanceShaders">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="MetalPerformanceShadersGraph">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="MetricKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="MLCompute">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="MobileCoreServices">
@@ -197,6 +230,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="NaturalLanguage">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="NearbyInteraction">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Network">
@@ -241,6 +277,9 @@
     <_LinkerFrameworks Include="SceneKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="ScreenTime">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="Security">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -265,7 +304,13 @@
     <_LinkerFrameworks Include="UIKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UniformTypeIdentifiers">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="UserNotifications">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UserNotificationsUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="VideoToolbox">
@@ -280,22 +325,7 @@
     <_LinkerFrameworks Include="WebKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
-    <_LinkerFrameworks Include="Accessibility">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AddressBook">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
     <_LinkerFrameworks Include="AdServices">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AppClip">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AppTrackingTransparency">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AutomaticAssessmentConfiguration">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AVRouting">
@@ -304,16 +334,10 @@
     <_LinkerFrameworks Include="BackgroundAssets">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
-    <_LinkerFrameworks Include="ClassKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreLocationUI">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreNFC">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="CoreTelephony">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreWLAN">
@@ -325,28 +349,10 @@
     <_LinkerFrameworks Include="ExecutionPolicy">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
-    <_LinkerFrameworks Include="HomeKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="Messages">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="MetalPerformanceShadersGraph">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="MLCompute">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="NearbyInteraction">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
     <_LinkerFrameworks Include="OSLog">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="PHASE">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="ScreenTime">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="SensitiveContentAnalysis">
@@ -371,12 +377,6 @@
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="ThreadNetwork">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="UniformTypeIdentifiers">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="UserNotificationsUI">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="GSS">

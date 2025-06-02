@@ -1,5 +1,6 @@
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/appsettings.Development.json
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/appsettings.json
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/TaskManagementApi.staticwebassets.endpoints.json
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/TaskManagementApi
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/TaskManagementApi.deps.json
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/bin/Debug/net8.0/TaskManagementApi.runtimeconfig.json
@@ -152,14 +153,11 @@
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/TaskManagementApi.csproj.CoreCompileInputs.cache
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/TaskManagementApi.MvcApplicationPartsAssemblyInfo.cs
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/TaskManagementApi.MvcApplicationPartsAssemblyInfo.cache
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.build.json
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.development.json
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets/msbuild.TaskManagementApi.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets/msbuild.build.TaskManagementApi.props
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TaskManagementApi.props
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TaskManagementApi.props
-/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/scopedcss/bundle/TaskManagementApi.styles.css
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.build.json
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.build.json.cache
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.development.json
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/TaskMana.85ED9B13.Up2Date
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/TaskManagementApi.dll
 /Users/walt/Downloads/TaskManagementApp/TaskManagementApi/obj/Debug/net8.0/refint/TaskManagementApi.dll

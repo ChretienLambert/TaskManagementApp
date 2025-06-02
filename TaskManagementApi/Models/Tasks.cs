@@ -6,12 +6,12 @@ public class Task
     public string? Description { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string? Staut { get; set; }  // Note: spelling matches your DB
-    public string UserName { get; set; } = null!;  // FK User.Name
-    public string SchoolName { get; set; } = null!;  // FK School.Name
-    public string ShopName { get; set; } = null!;  // FK Shop.Name
+    public string? Status { get; set; }
+    public string UserName { get; set; } = "AnneNgoue";
+    public string SchoolName { get; set; } = "ExcellenceAcademy";
+    public string ShopName { get; set; } = "ZewouShop";
 
-    public User User { get; set; } = null!;
-    public School School { get; set; } = null!;
-    public Shop Shop { get; set; } = null!;
+    public User? User { get; set; }
+    public School? School { get; set; }
+    public Shop? Shop { get; set; }
 }

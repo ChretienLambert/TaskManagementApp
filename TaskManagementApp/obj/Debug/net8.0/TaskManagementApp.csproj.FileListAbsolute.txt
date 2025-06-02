@@ -1,0 +1,5 @@
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0/TaskManagementApp.csproj.AssemblyReference.cache
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0/TaskManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0/TaskManagementApp.AssemblyInfoInputs.cache
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0/TaskManagementApp.AssemblyInfo.cs
+/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0/TaskManagementApp.csproj.CoreCompileInputs.cache

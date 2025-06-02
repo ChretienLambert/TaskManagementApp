@@ -8,7 +8,7 @@ AreAnyAssembliesTrimmed=false
 				CacheDirectory=/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/linker-cache
 				
 				Debug=true
-				DeploymentTarget=13.1
+				DeploymentTarget=14.2
 				
 				EnableSGenConc=false
 				
@@ -212,7 +212,7 @@ MonoLibrary=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.mac
 				MtouchFloat32=
 				NoWarn=
 				Optimize=
-				PartialStaticRegistrarLibrary=/usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0/18.0.8319/runtimes/maccatalyst-x64/native/Microsoft.MacCatalyst.registrar.a
+				PartialStaticRegistrarLibrary=/Users/walt/.nuget/packages/microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0/18.0.8324/runtimes/maccatalyst-x64/native/Microsoft.MacCatalyst.registrar.a
 				Platform=MacCatalyst
 				PlatformAssembly=Microsoft.MacCatalyst.dll
 				RelativeAppBundlePath=../TaskManagementApp.app/
@@ -222,7 +222,7 @@ MonoLibrary=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.mac
 				RequirePInvokeWrappers=
 				RuntimeConfigurationFile=runtimeconfig.bin
 				SdkDevPath=/Applications/Xcode.app/Contents/Developer
-				SdkRootDirectory=/usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Sdk.net8.0_18.0/18.0.8319/
+				SdkRootDirectory=/usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Sdk.net8.0_18.0/18.0.8324/
 				SdkVersion=15.2
 				SkipMarkingNSObjectsInUserAssemblies=
 				TargetArchitectures=x86_64
@@ -231,5 +231,5 @@ MonoLibrary=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.mac
 				Verbosity=0
 				Warn=
 				WarnAsError=
-				XamarinNativeLibraryDirectory=/usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0/18.0.8319/runtimes/maccatalyst-x64/native
+				XamarinNativeLibraryDirectory=/Users/walt/.nuget/packages/microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0/18.0.8324/runtimes/maccatalyst-x64/native
 				XamarinRuntime=MonoVM

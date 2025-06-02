@@ -121,7 +121,7 @@ namespace TaskManagementApi.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Staut = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     SchoolName = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ShopName = table.Column<string>(type: "nvarchar(450)", nullable: false)

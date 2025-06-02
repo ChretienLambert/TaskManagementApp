@@ -22,6 +22,7 @@ public partial class SchoolDashboardPage : ContentPage
     private async void LoadTasks()
     {
         var tasks = await _apiService.GetAllTasksAsync();
+        Console.WriteLine($"Loaded {tasks.Count} tasks");
         TaskListView.ItemsSource = tasks;
     }
 

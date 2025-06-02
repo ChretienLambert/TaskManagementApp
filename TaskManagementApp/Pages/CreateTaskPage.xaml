@@ -1,40 +1,39 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TaskManagementApp.Pages.CreateTaskPage"
-             Title="Create Task">
+<ContentPage 
+    x:Class="TaskManagementApp.Pages.CreateTaskPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
-
-        <Entry x:Name="TitleEntry" Placeholder="Task Title" />
-
-        <Editor x:Name="DescriptionEditor" Placeholder="Description" HeightRequest="100"/>
-
-        <Picker x:Name="TypePicker" Title="Type">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Homework</x:String>
-                    <x:String>Project</x:String>
-                    <x:String>Exam</x:String>
-                    <x:String>Other</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
-        <Picker x:Name="StatusPicker" Title="Status">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Pending</x:String>
-                    <x:String>In Progress</x:String>
-                    <x:String>Completed</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
-
-        <DatePicker x:Name="StartDatePicker" />
-        <DatePicker x:Name="DueDatePicker" />
-
-        <Button Text="Create Task" Clicked="OnSaveClicked"/>
-
-        <Label x:Name="StatusLabel" TextColor="Red"/>
-
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="800">
+            <Entry x:Name="TitleEntry" Placeholder="Task Title"/>
+            <Editor x:Name="DescriptionEditor" Placeholder="Description" HeightRequest="80"/>
+            
+            <!-- Type Picker -->
+            <Picker x:Name="TypeComboBox" Title="Select Type" WidthRequest="300">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Homework</x:String>
+                        <x:String>Project</x:String>
+                        <x:String>Exam</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <!-- Status Picker -->
+            <Picker x:Name="StatusComboBox" Title="Select Status" WidthRequest="300">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Pending</x:String>
+                        <x:String>In Progress</x:String>
+                        <x:String>Completed</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <DatePicker x:Name="StartDatePicker"/>
+            <DatePicker x:Name="DueDatePicker"/>
+            <Button Text="Create Task" Clicked="OnCreateTaskClicked" BackgroundColor="#B39DDB" TextColor="Black" CornerRadius="10"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
