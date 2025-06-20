@@ -3,25 +3,61 @@
     x:Class="TaskManagementApp.Pages.SchoolDashboardPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:models="clr-namespace:TaskManagementApp.Models">
+    xmlns:models="clr-namespace:TaskManagementApp.Models"
+    xmlns:pages="clr-namespace:TaskManagementApp.Pages">
 
     <VerticalStackLayout Padding="20" Spacing="20">
         <Label Text="School Tasks" FontSize="32" HorizontalOptions="Center" />
 
-        <Button Text="Create New Task" Clicked="OnCreateTaskClicked" BackgroundColor="Green" TextColor="White" CornerRadius="10"/>
+        <Button Text="Create New Task"
+                Clicked="OnCreateTaskClicked"
+                BackgroundColor="Green"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="180"
+                HorizontalOptions="Center"
+                Margin="0,0,0,10"/>
+
+        <!-- Table Header -->
+        <Grid ColumnDefinitions="2*,Auto,2*,2*,2*,2*,2*,2*"
+              Padding="5"
+              BackgroundColor="#333"
+              Margin="0,0,0,5">
+            <Label Text="Actions" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="Name" TextColor="White" FontAttributes="Bold" Grid.Column="2"/>
+            <Label Text="Description" TextColor="White" FontAttributes="Bold" Grid.Column="3"/>
+            <Label Text="Status" TextColor="White" FontAttributes="Bold" Grid.Column="4"/>
+            <Label Text="Type" TextColor="White" FontAttributes="Bold" Grid.Column="5"/>
+            <Label Text="Start" TextColor="White" FontAttributes="Bold" Grid.Column="6"/>
+            <Label Text="End" TextColor="White" FontAttributes="Bold" Grid.Column="7"/>
+        </Grid>
+
         <CollectionView x:Name="TaskListView"
-                        ItemsSource="{Binding Tasks}"
-                        SelectionChanged="OnTaskSelected">
+                        ItemsSource="{Binding Tasks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:TaskModel">
-                    <Frame Margin="5" Padding="10" BorderColor="Gray">
-                        <VerticalStackLayout>
-                            <Label Text="{Binding Name}" FontAttributes="Bold"/>
-                            <Label Text="{Binding Description}" FontSize="12"/>
-                            <Label Text="{Binding Status}" FontSize="10"/>
-                            <Label Text="{Binding Type}" FontSize="10"/>
-                        </VerticalStackLayout>
-                    </Frame>
+                    <Grid ColumnDefinitions="Auto,Auto,2*,2*,2*,2*,2*,2*" Padding="5" Margin="0,0,0,2" BackgroundColor="#222">
+                        <!-- Delete Button -->
+                        <Button Text="🗑"
+                                Grid.Column="0"
+                                BackgroundColor="Transparent"
+                                TextColor="Red"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type pages:SchoolDashboardPage}}, Path=BindingContext.DeleteTaskCommand}"
+                                CommandParameter="{Binding .}" />
+                        <!-- Update Button -->
+                        <Button Text="✏️"
+                                Grid.Column="1"
+                                BackgroundColor="Transparent"
+                                TextColor="Orange"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type pages:SchoolDashboardPage}}, Path=BindingContext.UpdateTaskCommand}"
+                                CommandParameter="{Binding .}" />
+                        <Label Text="{Binding Name, TargetNullValue='(no name)'}" Grid.Column="2" TextColor="White"/>
+                        <Label Text="{Binding Description, TargetNullValue='(no desc)'}" Grid.Column="3" TextColor="White"/>
+                        <Label Text="{Binding Status}" Grid.Column="4" TextColor="White"/>
+                        <Label Text="{Binding Type}" Grid.Column="5" TextColor="White"/>
+                        <Label Text="{Binding StartDate, StringFormat='{0:MM/dd/yyyy}'}" Grid.Column="6" TextColor="White"/>
+                        <Label Text="{Binding EndDate, StringFormat='{0:MM/dd/yyyy}'}" Grid.Column="7" TextColor="White"/>
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

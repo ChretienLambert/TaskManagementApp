@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="TaskManagementApp.Pages.UpdateTaskPage"
+             x:Name="UpdateTaskPageRoot"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TaskManagementApp.Pages">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:UpdateTypeCheckedConverter x:Key="TypeCheckedConverter"/>
+            <local:UpdateStatusCheckedConverter x:Key="StatusCheckedConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Update Task" FontSize="28" HorizontalOptions="Center"/>
+        <Entry x:Name="TitleEntry" Placeholder="Title"/>
+        <Editor x:Name="DescriptionEditor" Placeholder="Description" AutoSize="TextChanges"/>
+        
+        <!-- Type Selection -->
+        <Label Text="Type" FontAttributes="Bold"/>
+        <CollectionView ItemsSource="{Binding Types}" x:Name="TypeCollectionView" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding ., Converter={StaticResource TypeCheckedConverter}, ConverterParameter={x:Reference Name=UpdateTaskPageRoot}}" 
+                                  CheckedChanged="OnTypeCheckedChanged"/>
+                        <Label Text="{Binding .}" VerticalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Status Selection -->
+        <Label Text="Status" FontAttributes="Bold"/>
+        <CollectionView ItemsSource="{Binding Statuses}" x:Name="StatusCollectionView" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding ., Converter={StaticResource StatusCheckedConverter}, ConverterParameter={x:Reference Name=UpdateTaskPageRoot}}" 
+                                  CheckedChanged="OnStatusCheckedChanged"/>
+                        <Label Text="{Binding .}" VerticalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <DatePicker x:Name="StartDatePicker" />
+        <DatePicker x:Name="EndDatePicker" />
+        <Button Text="Save Changes" Clicked="OnSaveClicked" BackgroundColor="Orange" TextColor="White" CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

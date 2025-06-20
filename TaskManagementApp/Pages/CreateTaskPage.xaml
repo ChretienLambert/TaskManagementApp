@@ -1,35 +1,49 @@
 <ContentPage 
     x:Class="TaskManagementApp.Pages.CreateTaskPage"
+    x:Name="CreateTaskPageRoot"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    xmlns:local="clr-namespace:TaskManagementApp.Pages">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:CreateTypeCheckedConverter x:Key="TypeCheckedConverter"/>
+            <local:CreateStatusCheckedConverter x:Key="StatusCheckedConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="800">
+        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="800">
             <Entry x:Name="TitleEntry" Placeholder="Task Title"/>
             <Editor x:Name="DescriptionEditor" Placeholder="Description" HeightRequest="80"/>
             
-            <!-- Type Picker -->
-            <Picker x:Name="TypeComboBox" Title="Select Type" WidthRequest="300">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Homework</x:String>
-                        <x:String>Project</x:String>
-                        <x:String>Exam</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <!-- Type Selection -->
+            <Label Text="Type" FontAttributes="Bold"/>
+            <CollectionView ItemsSource="{Binding Types}" x:Name="TypeCollectionView" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding ., Converter={StaticResource TypeCheckedConverter}, ConverterParameter={x:Reference Name=CreateTaskPageRoot}}" 
+                                      CheckedChanged="OnTypeCheckedChanged"/>
+                            <Label Text="{Binding .}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             
-            <!-- Status Picker -->
-            <Picker x:Name="StatusComboBox" Title="Select Status" WidthRequest="300">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Pending</x:String>
-                        <x:String>In Progress</x:String>
-                        <x:String>Completed</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <!-- Status Selection -->
+            <Label Text="Status" FontAttributes="Bold"/>
+            <CollectionView ItemsSource="{Binding Statuses}" x:Name="StatusCollectionView" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding ., Converter={StaticResource StatusCheckedConverter}, ConverterParameter={x:Reference Name=CreateTaskPageRoot}}" 
+                                      CheckedChanged="OnStatusCheckedChanged"/>
+                            <Label Text="{Binding .}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             
             <DatePicker x:Name="StartDatePicker"/>
             <DatePicker x:Name="DueDatePicker"/>

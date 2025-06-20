@@ -23,7 +23,7 @@ public class ApiService
         return result;
     }
 
-    public async Task<TaskModel?> CreateTaskAsync(TaskModel newTask)
+    public async Task<TaskModel?> CreateTaskAsync(CreateTaskModel newTask)
     {
         Console.WriteLine("[DEBUG] Sending create task request to API...");
         var response = await _httpClient.PostAsJsonAsync($"{BaseUrl}/tasks", newTask);
@@ -36,6 +36,18 @@ public class ApiService
         return null;
     }
 
+    public async Task<bool> DeleteTaskAsync(int taskId)
+    {
+        var response = await _httpClient.DeleteAsync($"{BaseUrl}/tasks/{taskId}");
+        return response.IsSuccessStatusCode;
+    }
+
+    public async Task<bool> UpdateTaskAsync(TaskModel task)
+    {
+        var response = await _httpClient.PutAsJsonAsync($"{BaseUrl}/tasks/{task.TaskID}", task);
+        return response.IsSuccessStatusCode;
+    }
+
     public ObservableCollection<TaskModel> Tasks { get; set; } = new();
 
     public async Task LoadTasksAsync()
@@ -44,5 +56,11 @@ public class ApiService
         Tasks.Clear();
         foreach (var task in tasks)
             Tasks.Add(task);
+    }
+
+    public async Task<IEnumerable<TaskModel>> GetTasksAsync()
+    {
+        var result = await _httpClient.GetFromJsonAsync<List<TaskModel>>($"{BaseUrl}/tasks");
+        return result ?? new List<TaskModel>();
     }
 }

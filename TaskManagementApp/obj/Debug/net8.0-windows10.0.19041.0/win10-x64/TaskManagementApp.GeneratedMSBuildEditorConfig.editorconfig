@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.Sh
 build_metadata.AdditionalFiles.TargetPath = Pages/ShopDashboardPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/ShopDashboardPage.xaml
 
+[/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Pages/UpdateTaskPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Pages.UpdateTaskPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/UpdateTaskPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/UpdateTaskPage.xaml
+
 [/Users/walt/Downloads/TaskManagementApp/TaskManagementApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TaskManagementApp.Resources.Styles.Colors.xaml
